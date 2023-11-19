@@ -1,16 +1,27 @@
-# news_flutter
+# News mobile application using newsapi.org API.
 
-News API
+NOTICE: To run this application you need to get [newsapi.org](https://newsapi.org/) API key and use it as NEWS_API_KEY environment variable
 
-## Getting Started
+flutter run --dart-define NEWS_API_KEY=your_api_key
 
-This project is a starting point for a Flutter application.
+### Used technologies
+- Flutter & Dart
 
-A few resources to get you started if this is your first Flutter project:
+### App features
+- Top headlines demonstration from [newsapi.org](https://newsapi.org/) API;
+- Infinite scroll;
+- Headline details using Modal Bottom Sheet including Share & Open In Browser functionalities;
+- Text search;
+- Filter headlines by country and/or category;
+- Light/Dark modes;
+- Material 3 design;
+- Dependency injection using Provider;
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Demo
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://github.com/GdonatasG/news-flutter/assets/43965340/a81f1e97-dea3-4674-8125-b62b7a734f6a
+
+### Figma design prototype
+
+https://www.figma.com/file/qdhIPW66bq7U9THFHAySlG/news-mobile-app?type=design&node-id=54695%3A25113&mode=design&t=PKDvJg40Dw2QlUQf-1
+
