@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 import 'package:mobx/mobx.dart';
 import 'package:news_flutter/domain/articles/article.dart';
@@ -10,6 +9,7 @@ import 'package:news_flutter/presentation/headlines/headlines_country.dart';
 import 'package:news_flutter/presentation/headlines/search/search_headlines_store.dart';
 import 'package:news_flutter/presentation/headlines/widget/headline_details_modal.dart';
 import 'package:news_flutter/presentation/headlines/widget/paged_headlines_list.dart';
+import 'package:provider/provider.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
