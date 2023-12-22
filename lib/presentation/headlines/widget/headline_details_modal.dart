@@ -18,12 +18,12 @@ extension ArticleExtension on Article {
         builder: (BuildContext context) {
           return DraggableScrollableSheet(
               maxChildSize: 0.8,
-              initialChildSize: 0.8,
               minChildSize: 0.3,
               expand: false,
               builder: (context, scrollController) => ScrollConfiguration(
                     behavior: const ScrollBehavior().copyWith(overscroll: false),
                     child: ListView(
+                      physics: const ClampingScrollPhysics(),
                       controller: scrollController,
                       children: [
                         CachedNetworkImage(
