@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
@@ -79,6 +80,7 @@ class _TopHeadlinesComponentState extends State<TopHeadlinesComponent> {
     return Observer(
       builder: (context) => Scaffold(
         body: RefreshIndicator(
+          edgeOffset: MediaQuery.of(context).padding.top,
           onRefresh: () => Future.sync(
             () => _pagingController.refresh(),
           ),
@@ -149,7 +151,12 @@ class _TopHeadlinesComponentState extends State<TopHeadlinesComponent> {
                 sliver: true,
                 onItemClick: (article) {
                   article.details(context: context);
-                })
+                }),
+            SliverToBoxAdapter(
+              child: Container(
+                height: MediaQuery.of(context).padding.bottom,
+              ),
+            )
           ]),
         ),
       ),
